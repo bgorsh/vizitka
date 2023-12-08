@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="SHORTCUT ICON" href="img/favicon.ico" type="image/x-icon" />
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  <title>Визитка</title>
+  <script src="https://api-maps.yandex.ru/v3/?apikey=be58955d-2654-49bb-bb60-b14ca95aa75c&lang=ru_RU"></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="page-wrap">
+
+      <header class="header">
+        <div class="container">
+					<img src="img/saytodel.png" alt="logo" class="header-logo">
+          <nav class="header-menu">
+            <ul class="menu-list">
+              <li class="menu-item"><a href="#hero" class="menu-link">Главная</a></li>
+              <li class="menu-item"><a href="#about" class="menu-link">О себе</a></li>
+              <li class="menu-item"><a href="#skills" class="menu-link">Навыки и услуги</a></li>
+              <li class="menu-item"><a href="#education" class="menu-link">Образование</a></li>
+              <li class="menu-item"><a href="#contacts" class="menu-link">Контакты</a></li>
+            </ul>
+            <button class="header__burger-btn">
+              <span class="header__burger-icon">
+                <?xml version="1.0" ?>
+                <svg
+                  fill="none"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_105_1724)">
+                    <path
+                      d="M3 6.00098H21M3 12.001H21M3 18.001H21"
+                      stroke="#292929"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_105_1724">
+                      <rect
+                        fill="white"
+                        height="24"
+                        transform="translate(0 0.000976562)"
+                        width="24"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+            </button>
+          </nav>
+				</div>
+      </header>
+
+      <div id="scrollTop" class="scrollBtn scrollBtn_hide">
+        <i class="fa-sharp fa-solid fa-circle-chevron-up"></i>
+      </div>
+
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="text-wrap">
+            <h1 class="main-title title">Добро пожаловать на мою страницу!</h1>
+            <p class="descr">
+              Меня зовут Борис Горшунов, я фронтенд разработчик и маркетолог. Здесь вы можете узнать больше обо мне, моих навыках, опыте работы и
+              проектах, над которыми я работал. Это поможет вам получить представление о моем уровне профессионализма. Всегда готов к новым
+              проектам и сотрудничеству!
+            </p>
+          </div>
+          <img src="img/Itsme.png" alt="photo" class="hero-photo">
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="section-title title">О себе</h2>
+          <p class="description">
+            Меня зовут Борис Горшунов — интернет-предприниматель, практик в 
+            теме партнерского маркетинга, общий стаж работы с 
+            партнерскими программами более трех лет. Увлекаюсь созданием сайтов, 
+            интересуюсь интернет-заработком и всем, что с этим связано. На свои 
+            первые работы я потратил кучу времени и сил, но зато получил неоценимый 
+            опыт в создании сайтов. Учился многому сам без чьей-либо помощи. 
+            Оказывается, делать сайты гораздо проще и интересней, чем так, как я собирал 
+            их раньше, практически «на коленке». Теперь буду и дальше осваивать все 
+            тонкости этого увлекательного мастерства. В данный момент прохожу обучение в 
+            онлайн университете Skillbox по специальности веб-разработчик.
+          </p>
+        </div>
+      </section>
+
+      <section class="skills" id="skills">
+        <div class="container">
+          <h2 class="section-title title">Мои основные навыки и услуги</h2>
+          <div class="skills-wrap">
+            <div class="card">
+              <img src="img/images/Programming-amico.png" alt="image" class="card-img">
+              <h3 class="card-title title">Сайты</h3>
+              <p class="card-descr">
+                Делаю продающие лендинги, сайты на HTML, CSS, JS, WordPress онлайн и оффлайн конструкторах (Платформа LP, Тильда и др.)
+              </p>
+            </div>
+            <div class="card">
+              <img src="img/marketolog.png" alt="image" class="card-img">
+              <h3 class="card-title title">Реклама</h3>
+              <p class="card-descr">
+                Настраиваю рекламные кампании на площадках РСЯ, ВКонтакте, Facebook, Instagram, Youtube.
+              </p>
+            </div>
+            <div class="card">
+              <img src="img/vidomonter.svg" alt="image" class="card-img">
+              <h3 class="card-title title">Видео</h3>
+              <p class="card-descr">
+                Делаю продающие видеопрезентации, слайдшоу, заставки (Vegas Pro, Adobe Premiere, After Effects)
+              </p>
+            </div>
+            <div class="card">
+              <img src="img/creator.svg" alt="image" class="card-img">
+              <h3 class="card-title title">Креативы</h3>
+              <p class="card-descr">
+                Делаю баннеры и шапки для соцсетей и сайтов, креативы для рекламы (Photoshop, Illustrator)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="education" id="education">
+        <div class="container">
+          <h2 class="section-title title">Образование</h2>
+          <div class="education-wrap">
+            <div class="text-block">
+              <ol class="educ-list">
+                <li class="educ-item">Я закончил Пушкинское отделение Акдемии им. Можайского в 1986 г</li>
+                <li class="educ-item">Прошел курсы и тренинги по настройке рекламных кампаний во ВКонтакте, Facebook, Instagram, Youtube, РСЯ</li>
+                <li class="educ-item">Прохожу обучение в онлайн университете Skillbox на Frontend разрабочика</li>
+                <li class="educ-item">Прошел тренинги по созданию продающих видео</li>
+                <li class="educ-item">Прошел курс по созданию UI/UX дизайна</li>
+              </ol>
+            </div>
+            <img src="img/photos/students.jpg" alt="photo">
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <h2 class="section-title title">Контакты</h2>
+          <div class="contacts-wrap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2474.276304564043!2d39.20807907688698!3d51.67308529858572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413b2f03bd1eccf3%3A0x9263824fd6b01!2z0J_QtdGC0YDQvtCy0YHQutC40Lkg0KHQutCy0LXRgA!5e0!3m2!1sru!2sru!4v1701760169803!5m2!1sru!2sru" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contacts-text">
+              <h3 class="contacts-adress">Адрес</h3>
+              <p class="adress">394036 г Воронеж</p>
+              <h3 class="contacts-email">Email</h3>
+              <p class="email">bgorshunov65@bk.ru</p>
+              <h3 class="contacts-phone">Телефон</h3>
+              <p class="phone">+7 (900) 951-91-15</p>
+              <h3 class="contacts-social">Я в соцсетях:</h3>
+              <div class="social-icons">
+                <p class="soc">
+                  <a href="https://vk.com/bor_1965" target="_blank" class="soc-link">
+                    <img src="img/VK.svg" alt="icon" class="soc-icon">
+                  </a>
+                </p>
+                <p class="soc">
+                  <a href="https://ok.ru/profile/564430490193" target="_blank" class="soc-link">
+                    <img src="img/Ok.svg" alt="icon" class="soc-icon">
+                  </a>
+                </p>
+                <p class="soc">
+                  <a href="https://t.me/bgorsh" target="_blank" class="soc-link">
+                    <img src="img/telegram.svg" alt="icon" class="soc-icon">
+                  </a>
+                </p>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <img src="img/saytodel.png" alt="logo" class="footer-logo">
+          <h3 class="footer-text">© All rights reserved. Created by Gorshunov, 2020</h3>
+          <script src="https://yastatic.net/share2/share.js"></script>
+          <div class="ya-share2" data-curtain data-size="l" data-shape="round" data-services="vkontakte,odnoklassniki,telegram"></div>
+        </div>
+      </footer>
+  </div>
+</body>
+</html>
